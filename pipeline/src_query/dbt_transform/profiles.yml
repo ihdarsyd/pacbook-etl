@@ -1,0 +1,12 @@
+dbt_transform:
+  outputs:
+    dev:
+      dbname: pacbook-dwh
+      host: localhost
+      pass: mypassword
+      port: 5437
+      schema: final
+      threads: 1
+      type: postgres
+      user: postgres
+  target: dev

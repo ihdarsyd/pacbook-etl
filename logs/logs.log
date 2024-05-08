@@ -1,0 +1,1016 @@
+2024-05-08 10:57:03,913 - INFO - ==================================STARTING EXTRACT DATA=======================================
+2024-05-08 10:57:04,020 - INFO - EXTRACT 'address' - SUCCESS.
+2024-05-08 10:57:04,025 - INFO - EXTRACT 'address_status' - SUCCESS.
+2024-05-08 10:57:04,074 - INFO - EXTRACT 'author' - SUCCESS.
+2024-05-08 10:57:04,198 - INFO - EXTRACT 'book' - SUCCESS.
+2024-05-08 10:57:04,293 - INFO - EXTRACT 'book_author' - SUCCESS.
+2024-05-08 10:57:04,302 - INFO - EXTRACT 'book_language' - SUCCESS.
+2024-05-08 10:57:04,308 - INFO - EXTRACT 'country' - SUCCESS.
+2024-05-08 10:57:04,396 - INFO - EXTRACT 'cust_order' - SUCCESS.
+2024-05-08 10:57:04,415 - INFO - EXTRACT 'customer' - SUCCESS.
+2024-05-08 10:57:04,431 - INFO - EXTRACT 'customer_address' - SUCCESS.
+2024-05-08 10:57:04,631 - INFO - EXTRACT 'order_history' - SUCCESS.
+2024-05-08 10:57:04,908 - INFO - EXTRACT 'order_line' - SUCCESS.
+2024-05-08 10:57:04,917 - INFO - EXTRACT 'order_status' - SUCCESS.
+2024-05-08 10:57:04,940 - INFO - EXTRACT 'publisher' - SUCCESS.
+2024-05-08 10:57:04,947 - INFO - EXTRACT 'shipping_method' - SUCCESS.
+2024-05-08 10:57:04,947 - INFO - Extract All Tables From Sources - SUCCESS
+2024-05-08 10:57:04,949 - INFO - ==================================ENDING EXTRACT DATA=======================================
+2024-05-08 10:57:04,950 - INFO - [pid 16465] Worker Worker(salt=6366249517, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=16465) done      Extract()
+2024-05-08 10:57:04,952 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-05-08 10:57:04,954 - INFO - Informed scheduler that task   Extract__99914b932b   has status   DONE
+2024-05-08 10:57:04,954 - DEBUG - Asking scheduler for work...
+2024-05-08 10:57:04,954 - DEBUG - Pending tasks: 1
+2024-05-08 10:57:04,955 - INFO - [pid 16465] Worker Worker(salt=6366249517, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=16465) running   Load()
+2024-05-08 10:57:04,956 - INFO - Read Load Query - SUCCESS
+2024-05-08 10:57:05,068 - INFO - Read Extracted Data - SUCCESS
+2024-05-08 10:57:05,069 - INFO - Connect to DWH - SUCCESS
+2024-05-08 10:57:05,132 - INFO - Truncate pacbook staging Schema in DWH - SUCCESS
+2024-05-08 10:57:05,132 - INFO - ==================================STARTING LOAD DATA=======================================
+2024-05-08 10:57:05,201 - INFO - LOAD 'pacbook staging.address' - SUCCESS
+2024-05-08 10:57:05,201 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 10:57:05,209 - INFO - LOAD 'pacbook staging.address_status' - SUCCESS
+2024-05-08 10:57:05,209 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 10:57:05,342 - INFO - LOAD 'pacbook staging.author' - SUCCESS
+2024-05-08 10:57:05,342 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 10:57:05,793 - INFO - LOAD 'pacbook staging.book' - SUCCESS
+2024-05-08 10:57:05,794 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 10:57:06,004 - INFO - LOAD 'pacbook staging.book_author' - SUCCESS
+2024-05-08 10:57:06,004 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 10:57:06,011 - INFO - LOAD 'pacbook staging.book_language' - SUCCESS
+2024-05-08 10:57:06,011 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 10:57:06,022 - INFO - LOAD 'pacbook staging.country' - SUCCESS
+2024-05-08 10:57:06,022 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 10:57:06,194 - INFO - LOAD 'pacbook staging.cust_order' - SUCCESS
+2024-05-08 10:57:06,194 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 10:57:06,243 - INFO - LOAD 'pacbook staging.customer' - SUCCESS
+2024-05-08 10:57:06,243 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 10:57:06,296 - INFO - LOAD 'pacbook staging.customer_address' - SUCCESS
+2024-05-08 10:57:06,297 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 10:57:06,796 - INFO - LOAD 'pacbook staging.order_history' - SUCCESS
+2024-05-08 10:57:06,797 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 10:57:07,094 - INFO - LOAD 'pacbook staging.order_line' - SUCCESS
+2024-05-08 10:57:07,094 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 10:57:07,103 - INFO - LOAD 'pacbook staging.order_status' - SUCCESS
+2024-05-08 10:57:07,103 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 10:57:07,178 - INFO - LOAD 'pacbook staging.publisher' - SUCCESS
+2024-05-08 10:57:07,178 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 10:57:07,188 - INFO - LOAD 'pacbook staging.shipping_method' - SUCCESS
+2024-05-08 10:57:07,188 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 10:57:07,190 - INFO - ==================================ENDING LOAD DATA=======================================
+2024-05-08 10:57:07,192 - INFO - [pid 16465] Worker Worker(salt=6366249517, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=16465) done      Load()
+2024-05-08 10:57:07,193 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-05-08 10:57:07,193 - INFO - Informed scheduler that task   Load__99914b932b   has status   DONE
+2024-05-08 10:57:07,193 - DEBUG - Asking scheduler for work...
+2024-05-08 10:57:07,194 - DEBUG - Done
+2024-05-08 10:57:07,194 - DEBUG - There are no more tasks to run at this time
+2024-05-08 10:57:07,194 - INFO - Worker Worker(salt=6366249517, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=16465) was stopped. Shutting down Keep-Alive thread
+2024-05-08 10:57:07,195 - INFO - 
+===== Luigi Execution Summary =====
+
+Scheduled 2 tasks of which:
+* 2 ran successfully:
+    - 1 Extract()
+    - 1 Load()
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+2024-05-08 16:00:02,123 - INFO - ==================================STARTING EXTRACT DATA=======================================
+2024-05-08 16:00:02,201 - INFO - EXTRACT 'address' - SUCCESS.
+2024-05-08 16:00:02,206 - INFO - EXTRACT 'address_status' - SUCCESS.
+2024-05-08 16:00:02,234 - INFO - EXTRACT 'author' - SUCCESS.
+2024-05-08 16:00:02,323 - INFO - EXTRACT 'book' - SUCCESS.
+2024-05-08 16:00:02,391 - INFO - EXTRACT 'book_author' - SUCCESS.
+2024-05-08 16:00:02,396 - INFO - EXTRACT 'book_language' - SUCCESS.
+2024-05-08 16:00:02,401 - INFO - EXTRACT 'country' - SUCCESS.
+2024-05-08 16:00:02,460 - INFO - EXTRACT 'cust_order' - SUCCESS.
+2024-05-08 16:00:02,472 - INFO - EXTRACT 'customer' - SUCCESS.
+2024-05-08 16:00:02,486 - INFO - EXTRACT 'customer_address' - SUCCESS.
+2024-05-08 16:00:02,617 - INFO - EXTRACT 'order_history' - SUCCESS.
+2024-05-08 16:00:02,719 - INFO - EXTRACT 'order_line' - SUCCESS.
+2024-05-08 16:00:02,724 - INFO - EXTRACT 'order_status' - SUCCESS.
+2024-05-08 16:00:02,738 - INFO - EXTRACT 'publisher' - SUCCESS.
+2024-05-08 16:00:02,742 - INFO - EXTRACT 'shipping_method' - SUCCESS.
+2024-05-08 16:00:02,742 - INFO - Extract All Tables From Sources - SUCCESS
+2024-05-08 16:00:02,744 - INFO - ==================================ENDING EXTRACT DATA=======================================
+2024-05-08 16:00:02,744 - INFO - [pid 77019] Worker Worker(salt=7652614354, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=77019) done      Extract()
+2024-05-08 16:00:02,745 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-05-08 16:00:02,746 - INFO - Informed scheduler that task   Extract__99914b932b   has status   DONE
+2024-05-08 16:00:02,746 - DEBUG - Asking scheduler for work...
+2024-05-08 16:00:02,747 - DEBUG - Pending tasks: 2
+2024-05-08 16:00:02,747 - INFO - [pid 77019] Worker Worker(salt=7652614354, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=77019) running   Load()
+2024-05-08 16:00:02,748 - INFO - Read Load Query - SUCCESS
+2024-05-08 16:00:02,814 - INFO - Read Extracted Data - SUCCESS
+2024-05-08 16:00:02,815 - INFO - Connect to DWH - SUCCESS
+2024-05-08 16:00:02,868 - INFO - Truncate pacbook staging Schema in DWH - SUCCESS
+2024-05-08 16:00:02,869 - INFO - ==================================STARTING LOAD DATA=======================================
+2024-05-08 16:00:02,907 - INFO - LOAD 'pacbook staging.address' - SUCCESS
+2024-05-08 16:00:02,908 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:00:02,915 - INFO - LOAD 'pacbook staging.address_status' - SUCCESS
+2024-05-08 16:00:02,915 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:00:03,015 - INFO - LOAD 'pacbook staging.author' - SUCCESS
+2024-05-08 16:00:03,015 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:00:03,379 - INFO - LOAD 'pacbook staging.book' - SUCCESS
+2024-05-08 16:00:03,379 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:00:03,567 - INFO - LOAD 'pacbook staging.book_author' - SUCCESS
+2024-05-08 16:00:03,567 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:00:03,575 - INFO - LOAD 'pacbook staging.book_language' - SUCCESS
+2024-05-08 16:00:03,575 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:00:03,586 - INFO - LOAD 'pacbook staging.country' - SUCCESS
+2024-05-08 16:00:03,586 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:00:03,726 - INFO - LOAD 'pacbook staging.cust_order' - SUCCESS
+2024-05-08 16:00:03,727 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:00:03,771 - INFO - LOAD 'pacbook staging.customer' - SUCCESS
+2024-05-08 16:00:03,772 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:00:03,819 - INFO - LOAD 'pacbook staging.customer_address' - SUCCESS
+2024-05-08 16:00:03,819 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:00:04,184 - INFO - LOAD 'pacbook staging.order_history' - SUCCESS
+2024-05-08 16:00:04,185 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:00:04,416 - INFO - LOAD 'pacbook staging.order_line' - SUCCESS
+2024-05-08 16:00:04,417 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:00:04,424 - INFO - LOAD 'pacbook staging.order_status' - SUCCESS
+2024-05-08 16:00:04,424 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:00:04,487 - INFO - LOAD 'pacbook staging.publisher' - SUCCESS
+2024-05-08 16:00:04,487 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:00:04,495 - INFO - LOAD 'pacbook staging.shipping_method' - SUCCESS
+2024-05-08 16:00:04,495 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:00:04,497 - INFO - ==================================ENDING LOAD DATA=======================================
+2024-05-08 16:00:04,498 - INFO - [pid 77019] Worker Worker(salt=7652614354, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=77019) done      Load()
+2024-05-08 16:00:04,498 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-05-08 16:00:04,499 - INFO - Informed scheduler that task   Load__99914b932b   has status   DONE
+2024-05-08 16:00:04,499 - DEBUG - Asking scheduler for work...
+2024-05-08 16:00:04,499 - DEBUG - Pending tasks: 1
+2024-05-08 16:00:04,500 - INFO - [pid 77019] Worker Worker(salt=7652614354, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=77019) running   Transform()
+2024-05-08 16:00:04,500 - INFO - ==================================STARTING TRANSFROM DATA=======================================
+[0m09:00:07  Running with dbt=1.7.8
+[0m09:00:07  Registered adapter: postgres=1.7.8
+[0m09:00:07  Found 2 seeds, 5 models, 1 snapshot, 15 sources, 0 exposures, 0 metrics, 646 macros, 0 groups, 0 semantic models
+[0m09:00:07  
+[0m09:00:07  Concurrency: 1 threads (target='dev')
+[0m09:00:07  
+[0m09:00:07  1 of 5 START sql table model final.dim_address ................................. [RUN]
+[0m09:00:08  1 of 5 OK created sql table model final.dim_address ............................ [[32mSELECT 1000[0m in 0.17s]
+[0m09:00:08  2 of 5 START sql table model final.dim_book .................................... [RUN]
+[0m09:00:08  2 of 5 OK created sql table model final.dim_book ............................... [[32mSELECT 10058[0m in 0.19s]
+[0m09:00:08  3 of 5 START sql table model final.dim_customer ................................ [RUN]
+[0m09:00:08  3 of 5 OK created sql table model final.dim_customer ........................... [[32mSELECT 2000[0m in 0.08s]
+[0m09:00:08  4 of 5 START sql table model final.bridge_cust_address ......................... [RUN]
+[0m09:00:08  4 of 5 OK created sql table model final.bridge_cust_address .................... [[32mSELECT 3350[0m in 0.10s]
+[0m09:00:08  5 of 5 START sql table model final.fct_order_book .............................. [RUN]
+[0m09:00:11  5 of 5 OK created sql table model final.fct_order_book ......................... [[32mSELECT 41300[0m in 2.87s]
+[0m09:00:11  
+[0m09:00:11  Finished running 5 table models in 0 hours 0 minutes and 3.68 seconds (3.68s).
+[0m09:00:11  
+[0m09:00:11  [32mCompleted successfully[0m
+[0m09:00:11  
+[0m09:00:11  Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m09:00:16  Running with dbt=1.7.8
+[0m09:00:16  Registered adapter: postgres=1.7.8
+[0m09:00:17  Found 2 seeds, 5 models, 1 snapshot, 15 sources, 0 exposures, 0 metrics, 646 macros, 0 groups, 0 semantic models
+[0m09:00:17  
+[0m09:00:17  Concurrency: 1 threads (target='dev')
+[0m09:00:17  
+[0m09:00:17  1 of 1 START snapshot final.dim_shipping_method ................................ [RUN]
+[0m09:00:17  1 of 1 OK snapshotted final.dim_shipping_method ................................ [[32mINSERT 0 0[0m in 0.43s]
+[0m09:00:17  
+[0m09:00:17  Finished running 1 snapshot in 0 hours 0 minutes and 0.63 seconds (0.63s).
+[0m09:00:17  
+[0m09:00:17  [32mCompleted successfully[0m
+[0m09:00:17  
+[0m09:00:17  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2024-05-08 16:00:19,632 - INFO - ==================================ENDING TRANSFROM DATA=======================================
+2024-05-08 16:00:19,632 - INFO - [pid 77019] Worker Worker(salt=7652614354, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=77019) done      Transform()
+2024-05-08 16:00:19,633 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-05-08 16:00:19,633 - INFO - Informed scheduler that task   Transform__99914b932b   has status   DONE
+2024-05-08 16:00:19,634 - DEBUG - Asking scheduler for work...
+2024-05-08 16:00:19,634 - DEBUG - Done
+2024-05-08 16:00:19,634 - DEBUG - There are no more tasks to run at this time
+2024-05-08 16:00:19,634 - INFO - Worker Worker(salt=7652614354, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=77019) was stopped. Shutting down Keep-Alive thread
+2024-05-08 16:00:19,635 - INFO - 
+===== Luigi Execution Summary =====
+
+Scheduled 3 tasks of which:
+* 3 ran successfully:
+    - 1 Extract()
+    - 1 Load()
+    - 1 Transform()
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+2024-05-08 16:28:15,694 - INFO - ==================================STARTING EXTRACT DATA=======================================
+2024-05-08 16:28:15,739 - INFO - EXTRACT 'address' - SUCCESS.
+2024-05-08 16:28:15,745 - INFO - EXTRACT 'address_status' - SUCCESS.
+2024-05-08 16:28:15,772 - INFO - EXTRACT 'author' - SUCCESS.
+2024-05-08 16:28:15,857 - INFO - EXTRACT 'book' - SUCCESS.
+2024-05-08 16:28:15,929 - INFO - EXTRACT 'book_author' - SUCCESS.
+2024-05-08 16:28:15,936 - INFO - EXTRACT 'book_language' - SUCCESS.
+2024-05-08 16:28:15,942 - INFO - EXTRACT 'country' - SUCCESS.
+2024-05-08 16:28:16,005 - INFO - EXTRACT 'cust_order' - SUCCESS.
+2024-05-08 16:28:16,021 - INFO - EXTRACT 'customer' - SUCCESS.
+2024-05-08 16:28:16,037 - INFO - EXTRACT 'customer_address' - SUCCESS.
+2024-05-08 16:28:16,175 - INFO - EXTRACT 'order_history' - SUCCESS.
+2024-05-08 16:28:16,286 - INFO - EXTRACT 'order_line' - SUCCESS.
+2024-05-08 16:28:16,290 - INFO - EXTRACT 'order_status' - SUCCESS.
+2024-05-08 16:28:16,301 - INFO - EXTRACT 'publisher' - SUCCESS.
+2024-05-08 16:28:16,311 - INFO - EXTRACT 'shipping_method' - SUCCESS.
+2024-05-08 16:28:16,311 - INFO - Extract All Tables From Sources - SUCCESS
+2024-05-08 16:28:16,313 - INFO - ==================================ENDING EXTRACT DATA=======================================
+2024-05-08 16:28:16,313 - INFO - [pid 86805] Worker Worker(salt=3945948145, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=86805) done      Extract()
+2024-05-08 16:28:16,315 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-05-08 16:28:16,315 - INFO - Informed scheduler that task   Extract__99914b932b   has status   DONE
+2024-05-08 16:28:16,315 - DEBUG - Asking scheduler for work...
+2024-05-08 16:28:16,316 - DEBUG - Pending tasks: 2
+2024-05-08 16:28:16,316 - INFO - [pid 86805] Worker Worker(salt=3945948145, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=86805) running   Load()
+2024-05-08 16:28:16,316 - INFO - Read Load Query - SUCCESS
+2024-05-08 16:28:16,401 - INFO - Read Extracted Data - SUCCESS
+2024-05-08 16:28:16,402 - INFO - Connect to DWH - SUCCESS
+2024-05-08 16:28:16,451 - INFO - Truncate pacbook staging Schema in DWH - SUCCESS
+2024-05-08 16:28:16,451 - INFO - ==================================STARTING LOAD DATA=======================================
+2024-05-08 16:28:16,487 - INFO - LOAD 'pacbook staging.address' - SUCCESS
+2024-05-08 16:28:16,487 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:28:16,494 - INFO - LOAD 'pacbook staging.address_status' - SUCCESS
+2024-05-08 16:28:16,494 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:28:16,598 - INFO - LOAD 'pacbook staging.author' - SUCCESS
+2024-05-08 16:28:16,598 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:28:16,913 - INFO - LOAD 'pacbook staging.book' - SUCCESS
+2024-05-08 16:28:16,913 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:28:17,101 - INFO - LOAD 'pacbook staging.book_author' - SUCCESS
+2024-05-08 16:28:17,101 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:28:17,110 - INFO - LOAD 'pacbook staging.book_language' - SUCCESS
+2024-05-08 16:28:17,110 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:28:17,120 - INFO - LOAD 'pacbook staging.country' - SUCCESS
+2024-05-08 16:28:17,120 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:28:17,282 - INFO - LOAD 'pacbook staging.cust_order' - SUCCESS
+2024-05-08 16:28:17,282 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:28:17,336 - INFO - LOAD 'pacbook staging.customer' - SUCCESS
+2024-05-08 16:28:17,336 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:28:17,387 - INFO - LOAD 'pacbook staging.customer_address' - SUCCESS
+2024-05-08 16:28:17,387 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:28:17,774 - INFO - LOAD 'pacbook staging.order_history' - SUCCESS
+2024-05-08 16:28:17,774 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:28:18,000 - INFO - LOAD 'pacbook staging.order_line' - SUCCESS
+2024-05-08 16:28:18,000 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:28:18,007 - INFO - LOAD 'pacbook staging.order_status' - SUCCESS
+2024-05-08 16:28:18,007 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:28:18,066 - INFO - LOAD 'pacbook staging.publisher' - SUCCESS
+2024-05-08 16:28:18,066 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:28:18,073 - INFO - LOAD 'pacbook staging.shipping_method' - SUCCESS
+2024-05-08 16:28:18,073 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:28:18,075 - INFO - ==================================ENDING LOAD DATA=======================================
+2024-05-08 16:28:18,076 - INFO - [pid 86805] Worker Worker(salt=3945948145, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=86805) done      Load()
+2024-05-08 16:28:18,077 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-05-08 16:28:18,077 - INFO - Informed scheduler that task   Load__99914b932b   has status   DONE
+2024-05-08 16:28:18,078 - DEBUG - Asking scheduler for work...
+2024-05-08 16:28:18,078 - DEBUG - Pending tasks: 1
+2024-05-08 16:28:18,078 - INFO - [pid 86805] Worker Worker(salt=3945948145, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=86805) running   Transform()
+2024-05-08 16:28:18,079 - INFO - ==================================STARTING TRANSFROM DATA=======================================
+[0m09:28:20  Running with dbt=1.7.8
+[0m09:28:20  Registered adapter: postgres=1.7.8
+[0m09:28:21  Found 5 models, 1 snapshot, 2 seeds, 1 operation, 37 tests, 15 sources, 0 exposures, 0 metrics, 859 macros, 0 groups, 0 semantic models
+[0m09:28:21  
+[0m09:28:21  Concurrency: 1 threads (target='dev')
+[0m09:28:21  
+[0m09:28:21  1 of 5 START sql table model final.dim_address ................................. [RUN]
+[0m09:28:21  1 of 5 OK created sql table model final.dim_address ............................ [[32mSELECT 1000[0m in 0.23s]
+[0m09:28:21  2 of 5 START sql table model final.dim_book .................................... [RUN]
+[0m09:28:21  2 of 5 OK created sql table model final.dim_book ............................... [[32mSELECT 10058[0m in 0.18s]
+[0m09:28:21  3 of 5 START sql table model final.dim_customer ................................ [RUN]
+[0m09:28:21  3 of 5 OK created sql table model final.dim_customer ........................... [[32mSELECT 2000[0m in 0.11s]
+[0m09:28:21  4 of 5 START sql table model final.bridge_cust_address ......................... [RUN]
+[0m09:28:22  4 of 5 OK created sql table model final.bridge_cust_address .................... [[32mSELECT 3350[0m in 0.14s]
+[0m09:28:22  5 of 5 START sql table model final.fct_order_book .............................. [RUN]
+[0m09:28:28  5 of 5 OK created sql table model final.fct_order_book ......................... [[32mSELECT 41300[0m in 6.08s]
+[0m09:28:28  
+[0m09:28:28  Running 1 on-run-end hook
+[0m09:28:28  Running dbt Constraints
+[0m09:28:28  Finished dbt Constraints
+[0m09:28:28  1 of 1 START hook: dbt_constraints.on-run-end.0 ................................ [RUN]
+[0m09:28:28  1 of 1 OK hook: dbt_constraints.on-run-end.0 ................................... [[32mOK[0m in 0.00s]
+[0m09:28:28  
+[0m09:28:28  
+[0m09:28:28  Finished running 5 table models, 1 hook in 0 hours 0 minutes and 7.04 seconds (7.04s).
+[0m09:28:28  
+[0m09:28:28  [32mCompleted successfully[0m
+[0m09:28:28  
+[0m09:28:28  Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m09:28:33  Running with dbt=1.7.8
+[0m09:28:34  Registered adapter: postgres=1.7.8
+[0m09:28:34  Found 5 models, 1 snapshot, 2 seeds, 1 operation, 37 tests, 15 sources, 0 exposures, 0 metrics, 859 macros, 0 groups, 0 semantic models
+[0m09:28:34  
+[0m09:28:34  Concurrency: 1 threads (target='dev')
+[0m09:28:34  
+[0m09:28:34  1 of 1 START snapshot final.dim_shipping_method ................................ [RUN]
+[0m09:28:34  1 of 1 OK snapshotted final.dim_shipping_method ................................ [[32mINSERT 0 0[0m in 0.38s]
+[0m09:28:34  
+[0m09:28:34  Running 1 on-run-end hook
+[0m09:28:34  Running dbt Constraints
+[0m09:28:35  Finished dbt Constraints
+[0m09:28:35  1 of 1 START hook: dbt_constraints.on-run-end.0 ................................ [RUN]
+[0m09:28:35  1 of 1 OK hook: dbt_constraints.on-run-end.0 ................................... [[32mOK[0m in 0.00s]
+[0m09:28:35  
+[0m09:28:35  
+[0m09:28:35  Finished running 1 snapshot, 1 hook in 0 hours 0 minutes and 0.73 seconds (0.73s).
+[0m09:28:35  
+[0m09:28:35  [32mCompleted successfully[0m
+[0m09:28:35  
+[0m09:28:35  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m09:28:39  Running with dbt=1.7.8
+[0m09:28:40  Registered adapter: postgres=1.7.8
+[0m09:28:40  Found 5 models, 1 snapshot, 2 seeds, 1 operation, 37 tests, 15 sources, 0 exposures, 0 metrics, 859 macros, 0 groups, 0 semantic models
+[0m09:28:40  
+[0m09:28:40  Concurrency: 1 threads (target='dev')
+[0m09:28:40  
+[0m09:28:40  1 of 37 START test dbt_constraints_foreign_key_bridge_cust_address_address_id__address_id__ref_dim_address_  [RUN]
+[0m09:28:40  1 of 37 PASS dbt_constraints_foreign_key_bridge_cust_address_address_id__address_id__ref_dim_address_  [[32mPASS[0m in 0.10s]
+[0m09:28:40  2 of 37 START test dbt_constraints_foreign_key_bridge_cust_address_customer_id__customer_id__ref_dim_customer_  [RUN]
+[0m09:28:40  2 of 37 PASS dbt_constraints_foreign_key_bridge_cust_address_customer_id__customer_id__ref_dim_customer_  [[32mPASS[0m in 0.05s]
+[0m09:28:40  3 of 37 START test dbt_constraints_foreign_key_fct_order_book_book_id__book_id__ref_dim_book_  [RUN]
+[0m09:28:40  3 of 37 PASS dbt_constraints_foreign_key_fct_order_book_book_id__book_id__ref_dim_book_  [[32mPASS[0m in 0.09s]
+[0m09:28:40  4 of 37 START test dbt_constraints_foreign_key_fct_order_book_customer_id__customer_id__ref_dim_customer_  [RUN]
+[0m09:28:40  4 of 37 PASS dbt_constraints_foreign_key_fct_order_book_customer_id__customer_id__ref_dim_customer_  [[32mPASS[0m in 0.08s]
+[0m09:28:40  5 of 37 START test dbt_constraints_foreign_key_fct_order_book_dest_address_id__address_id__ref_dim_address_  [RUN]
+[0m09:28:40  5 of 37 PASS dbt_constraints_foreign_key_fct_order_book_dest_address_id__address_id__ref_dim_address_  [[32mPASS[0m in 0.09s]
+[0m09:28:40  6 of 37 START test dbt_constraints_foreign_key_fct_order_book_order_date__date_id__ref_dim_date_  [RUN]
+[0m09:28:40  6 of 37 PASS dbt_constraints_foreign_key_fct_order_book_order_date__date_id__ref_dim_date_  [[32mPASS[0m in 0.09s]
+[0m09:28:40  7 of 37 START test dbt_constraints_foreign_key_fct_order_book_order_time__time_id__ref_dim_time_  [RUN]
+[0m09:28:41  7 of 37 PASS dbt_constraints_foreign_key_fct_order_book_order_time__time_id__ref_dim_time_  [[32mPASS[0m in 0.11s]
+[0m09:28:41  8 of 37 START test dbt_constraints_foreign_key_fct_order_book_shipping_method_id__shipping_method_id__ref_dim_shipping_method_  [RUN]
+[0m09:28:41  8 of 37 PASS dbt_constraints_foreign_key_fct_order_book_shipping_method_id__shipping_method_id__ref_dim_shipping_method_  [[32mPASS[0m in 0.08s]
+[0m09:28:41  9 of 37 START test dbt_constraints_foreign_key_fct_order_book_status_date__date_id__ref_dim_date_  [RUN]
+[0m09:28:41  9 of 37 PASS dbt_constraints_foreign_key_fct_order_book_status_date__date_id__ref_dim_date_  [[32mPASS[0m in 0.08s]
+[0m09:28:41  10 of 37 START test dbt_constraints_foreign_key_fct_order_book_status_time__time_id__ref_dim_time_  [RUN]
+[0m09:28:41  10 of 37 PASS dbt_constraints_foreign_key_fct_order_book_status_time__time_id__ref_dim_time_  [[32mPASS[0m in 0.15s]
+[0m09:28:41  11 of 37 START test dbt_constraints_primary_key_bridge_cust_address_cust_address_id  [RUN]
+[0m09:28:41  11 of 37 PASS dbt_constraints_primary_key_bridge_cust_address_cust_address_id .. [[32mPASS[0m in 0.07s]
+[0m09:28:41  12 of 37 START test dbt_constraints_primary_key_dim_address_address_id ......... [RUN]
+[0m09:28:41  12 of 37 PASS dbt_constraints_primary_key_dim_address_address_id ............... [[32mPASS[0m in 0.05s]
+[0m09:28:41  13 of 37 START test dbt_constraints_primary_key_dim_book_book_id ............... [RUN]
+[0m09:28:41  13 of 37 PASS dbt_constraints_primary_key_dim_book_book_id ..................... [[32mPASS[0m in 0.10s]
+[0m09:28:41  14 of 37 START test dbt_constraints_primary_key_dim_customer_customer_id ....... [RUN]
+[0m09:28:41  14 of 37 PASS dbt_constraints_primary_key_dim_customer_customer_id ............. [[32mPASS[0m in 0.05s]
+[0m09:28:41  15 of 37 START test dbt_constraints_primary_key_dim_date_date_id ............... [RUN]
+[0m09:28:41  15 of 37 PASS dbt_constraints_primary_key_dim_date_date_id ..................... [[32mPASS[0m in 0.06s]
+[0m09:28:41  16 of 37 START test dbt_constraints_primary_key_dim_time_time_id ............... [RUN]
+[0m09:28:41  16 of 37 PASS dbt_constraints_primary_key_dim_time_time_id ..................... [[32mPASS[0m in 0.15s]
+[0m09:28:41  17 of 37 START test dbt_constraints_primary_key_fct_order_book_order_id ........ [RUN]
+[0m09:28:42  17 of 37 PASS dbt_constraints_primary_key_fct_order_book_order_id .............. [[32mPASS[0m in 0.08s]
+[0m09:28:42  18 of 37 START test not_null_bridge_cust_address_address_id .................... [RUN]
+[0m09:28:42  18 of 37 PASS not_null_bridge_cust_address_address_id .......................... [[32mPASS[0m in 0.05s]
+[0m09:28:42  19 of 37 START test not_null_bridge_cust_address_cust_address_id ............... [RUN]
+[0m09:28:42  19 of 37 PASS not_null_bridge_cust_address_cust_address_id ..................... [[32mPASS[0m in 0.05s]
+[0m09:28:42  20 of 37 START test not_null_bridge_cust_address_customer_id ................... [RUN]
+[0m09:28:42  20 of 37 PASS not_null_bridge_cust_address_customer_id ......................... [[32mPASS[0m in 0.06s]
+[0m09:28:42  21 of 37 START test not_null_dim_address_address_id ............................ [RUN]
+[0m09:28:42  21 of 37 PASS not_null_dim_address_address_id .................................. [[32mPASS[0m in 0.06s]
+[0m09:28:42  22 of 37 START test not_null_dim_address_nk_address_id ......................... [RUN]
+[0m09:28:42  22 of 37 PASS not_null_dim_address_nk_address_id ............................... [[32mPASS[0m in 0.06s]
+[0m09:28:42  23 of 37 START test not_null_dim_book_book_id .................................. [RUN]
+[0m09:28:42  23 of 37 PASS not_null_dim_book_book_id ........................................ [[32mPASS[0m in 0.06s]
+[0m09:28:42  24 of 37 START test not_null_dim_book_nk_book_id ............................... [RUN]
+[0m09:28:42  24 of 37 PASS not_null_dim_book_nk_book_id ..................................... [[32mPASS[0m in 0.05s]
+[0m09:28:42  25 of 37 START test not_null_dim_customer_customer_id .......................... [RUN]
+[0m09:28:42  25 of 37 PASS not_null_dim_customer_customer_id ................................ [[32mPASS[0m in 0.06s]
+[0m09:28:42  26 of 37 START test not_null_dim_customer_nk_customer_id ....................... [RUN]
+[0m09:28:42  26 of 37 PASS not_null_dim_customer_nk_customer_id ............................. [[32mPASS[0m in 0.06s]
+[0m09:28:42  27 of 37 START test not_null_dim_date_date_id .................................. [RUN]
+[0m09:28:42  27 of 37 PASS not_null_dim_date_date_id ........................................ [[32mPASS[0m in 0.06s]
+[0m09:28:42  28 of 37 START test not_null_dim_time_time_id .................................. [RUN]
+[0m09:28:42  28 of 37 PASS not_null_dim_time_time_id ........................................ [[32mPASS[0m in 0.06s]
+[0m09:28:42  29 of 37 START test not_null_fct_order_book_book_id ............................ [RUN]
+[0m09:28:42  29 of 37 PASS not_null_fct_order_book_book_id .................................. [[32mPASS[0m in 0.07s]
+[0m09:28:42  30 of 37 START test not_null_fct_order_book_customer_id ........................ [RUN]
+[0m09:28:42  30 of 37 PASS not_null_fct_order_book_customer_id .............................. [[32mPASS[0m in 0.06s]
+[0m09:28:42  31 of 37 START test not_null_fct_order_book_dest_address_id .................... [RUN]
+[0m09:28:42  31 of 37 PASS not_null_fct_order_book_dest_address_id .......................... [[32mPASS[0m in 0.13s]
+[0m09:28:42  32 of 37 START test not_null_fct_order_book_order_date ......................... [RUN]
+[0m09:28:43  32 of 37 PASS not_null_fct_order_book_order_date ............................... [[32mPASS[0m in 0.05s]
+[0m09:28:43  33 of 37 START test not_null_fct_order_book_order_id ........................... [RUN]
+[0m09:28:43  33 of 37 PASS not_null_fct_order_book_order_id ................................. [[32mPASS[0m in 0.05s]
+[0m09:28:43  34 of 37 START test not_null_fct_order_book_order_time ......................... [RUN]
+[0m09:28:43  34 of 37 PASS not_null_fct_order_book_order_time ............................... [[32mPASS[0m in 0.05s]
+[0m09:28:43  35 of 37 START test not_null_fct_order_book_shipping_method_id ................. [RUN]
+[0m09:28:43  35 of 37 PASS not_null_fct_order_book_shipping_method_id ....................... [[32mPASS[0m in 0.05s]
+[0m09:28:43  36 of 37 START test not_null_fct_order_book_status_date ........................ [RUN]
+[0m09:28:43  36 of 37 PASS not_null_fct_order_book_status_date .............................. [[32mPASS[0m in 0.05s]
+[0m09:28:43  37 of 37 START test not_null_fct_order_book_status_time ........................ [RUN]
+[0m09:28:43  37 of 37 PASS not_null_fct_order_book_status_time .............................. [[32mPASS[0m in 0.05s]
+[0m09:28:43  
+[0m09:28:43  Running 1 on-run-end hook
+[0m09:28:43  Running dbt Constraints
+[0m09:28:43  Creating not null constraint for: address_id in "pacbook-dwh"."final"."bridge_cust_address"
+[0m09:28:43  Creating not null constraint for: cust_address_id in "pacbook-dwh"."final"."bridge_cust_address"
+[0m09:28:43  Creating not null constraint for: customer_id in "pacbook-dwh"."final"."bridge_cust_address"
+[0m09:28:43  Creating not null constraint for: address_id in "pacbook-dwh"."final"."dim_address"
+[0m09:28:43  Creating not null constraint for: nk_address_id in "pacbook-dwh"."final"."dim_address"
+[0m09:28:43  Creating not null constraint for: book_id in "pacbook-dwh"."final"."dim_book"
+[0m09:28:43  Creating not null constraint for: nk_book_id in "pacbook-dwh"."final"."dim_book"
+[0m09:28:43  Creating not null constraint for: customer_id in "pacbook-dwh"."final"."dim_customer"
+[0m09:28:43  Creating not null constraint for: nk_customer_id in "pacbook-dwh"."final"."dim_customer"
+[0m09:28:43  Creating not null constraint for: date_id in "pacbook-dwh"."final"."dim_date"
+[0m09:28:43  Creating not null constraint for: time_id in "pacbook-dwh"."final"."dim_time"
+[0m09:28:43  Creating not null constraint for: book_id in "pacbook-dwh"."final"."fct_order_book"
+[0m09:28:43  Creating not null constraint for: customer_id in "pacbook-dwh"."final"."fct_order_book"
+[0m09:28:43  Creating not null constraint for: dest_address_id in "pacbook-dwh"."final"."fct_order_book"
+[0m09:28:43  Creating not null constraint for: order_date in "pacbook-dwh"."final"."fct_order_book"
+[0m09:28:43  Creating not null constraint for: order_id in "pacbook-dwh"."final"."fct_order_book"
+[0m09:28:43  Creating not null constraint for: order_time in "pacbook-dwh"."final"."fct_order_book"
+[0m09:28:43  Creating not null constraint for: shipping_method_id in "pacbook-dwh"."final"."fct_order_book"
+[0m09:28:43  Creating not null constraint for: status_date in "pacbook-dwh"."final"."fct_order_book"
+[0m09:28:43  Creating not null constraint for: status_time in "pacbook-dwh"."final"."fct_order_book"
+[0m09:28:43  Creating not null constraint for: cust_address_id in "pacbook-dwh"."final"."bridge_cust_address"
+[0m09:28:44  Creating primary key: BRIDGE_CUST_ADDRESS_CUST_ADDRESS_ID_PK
+[0m09:28:44  Creating not null constraint for: address_id in "pacbook-dwh"."final"."dim_address"
+[0m09:28:44  Creating primary key: DIM_ADDRESS_ADDRESS_ID_PK
+[0m09:28:44  Creating not null constraint for: book_id in "pacbook-dwh"."final"."dim_book"
+[0m09:28:44  Creating primary key: DIM_BOOK_BOOK_ID_PK
+[0m09:28:44  Creating not null constraint for: customer_id in "pacbook-dwh"."final"."dim_customer"
+[0m09:28:44  Creating primary key: DIM_CUSTOMER_CUSTOMER_ID_PK
+[0m09:28:44  Creating not null constraint for: date_id in "pacbook-dwh"."final"."dim_date"
+[0m09:28:44  Creating not null constraint for: time_id in "pacbook-dwh"."final"."dim_time"
+[0m09:28:44  Creating not null constraint for: order_id in "pacbook-dwh"."final"."fct_order_book"
+[0m09:28:44  Creating primary key: FCT_ORDER_BOOK_ORDER_ID_PK
+[0m09:28:44  Creating foreign key: BRIDGE_CUST_ADDRESS_ADDRESS_ID_FK referencing dim_address ['address_id']
+[0m09:28:44  Creating foreign key: BRIDGE_CUST_ADDRESS_CUSTOMER_ID_FK referencing dim_customer ['customer_id']
+[0m09:28:44  Creating foreign key: FCT_ORDER_BOOK_BOOK_ID_FK referencing dim_book ['book_id']
+[0m09:28:44  Creating foreign key: FCT_ORDER_BOOK_CUSTOMER_ID_FK referencing dim_customer ['customer_id']
+[0m09:28:44  Creating foreign key: FCT_ORDER_BOOK_DEST_ADDRESS_ID_FK referencing dim_address ['address_id']
+[0m09:28:44  Creating foreign key: FCT_ORDER_BOOK_ORDER_DATE_FK referencing dim_date ['date_id']
+[0m09:28:44  Creating foreign key: FCT_ORDER_BOOK_ORDER_TIME_FK referencing dim_time ['time_id']
+[0m09:28:44  Skipping FCT_ORDER_BOOK_SHIPPING_METHOD_ID_FK because a PK/UK was not found on the PK table: "pacbook-dwh"."final"."dim_shipping_method" ['shipping_method_id']
+[0m09:28:44  Creating foreign key: FCT_ORDER_BOOK_STATUS_DATE_FK referencing dim_date ['date_id']
+[0m09:28:45  Creating foreign key: FCT_ORDER_BOOK_STATUS_TIME_FK referencing dim_time ['time_id']
+[0m09:28:45  Finished dbt Constraints
+[0m09:28:45  1 of 1 START hook: dbt_constraints.on-run-end.0 ................................ [RUN]
+[0m09:28:45  1 of 1 OK hook: dbt_constraints.on-run-end.0 ................................... [[32mOK[0m in 0.00s]
+[0m09:28:45  
+[0m09:28:45  
+[0m09:28:45  Finished running 37 tests, 1 hook in 0 hours 0 minutes and 4.82 seconds (4.82s).
+[0m09:28:45  
+[0m09:28:45  [32mCompleted successfully[0m
+[0m09:28:45  
+[0m09:28:45  Done. PASS=37 WARN=0 ERROR=0 SKIP=0 TOTAL=37
+2024-05-08 16:28:47,006 - INFO - ==================================ENDING TRANSFROM DATA=======================================
+2024-05-08 16:28:47,007 - INFO - [pid 86805] Worker Worker(salt=3945948145, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=86805) done      Transform()
+2024-05-08 16:28:47,007 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-05-08 16:28:47,008 - INFO - Informed scheduler that task   Transform__99914b932b   has status   DONE
+2024-05-08 16:28:47,008 - DEBUG - Asking scheduler for work...
+2024-05-08 16:28:47,009 - DEBUG - Done
+2024-05-08 16:28:47,009 - DEBUG - There are no more tasks to run at this time
+2024-05-08 16:28:47,009 - INFO - Worker Worker(salt=3945948145, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=86805) was stopped. Shutting down Keep-Alive thread
+2024-05-08 16:28:47,010 - INFO - 
+===== Luigi Execution Summary =====
+
+Scheduled 3 tasks of which:
+* 3 ran successfully:
+    - 1 Extract()
+    - 1 Load()
+    - 1 Transform()
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+2024-05-08 16:30:29,692 - INFO - ==================================STARTING EXTRACT DATA=======================================
+2024-05-08 16:30:29,721 - INFO - EXTRACT 'address' - SUCCESS.
+2024-05-08 16:30:29,725 - INFO - EXTRACT 'address_status' - SUCCESS.
+2024-05-08 16:30:29,748 - INFO - EXTRACT 'author' - SUCCESS.
+2024-05-08 16:30:29,823 - INFO - EXTRACT 'book' - SUCCESS.
+2024-05-08 16:30:29,887 - INFO - EXTRACT 'book_author' - SUCCESS.
+2024-05-08 16:30:29,892 - INFO - EXTRACT 'book_language' - SUCCESS.
+2024-05-08 16:30:29,896 - INFO - EXTRACT 'country' - SUCCESS.
+2024-05-08 16:30:29,955 - INFO - EXTRACT 'cust_order' - SUCCESS.
+2024-05-08 16:30:29,965 - INFO - EXTRACT 'customer' - SUCCESS.
+2024-05-08 16:30:29,976 - INFO - EXTRACT 'customer_address' - SUCCESS.
+2024-05-08 16:30:30,109 - INFO - EXTRACT 'order_history' - SUCCESS.
+2024-05-08 16:30:30,200 - INFO - EXTRACT 'order_line' - SUCCESS.
+2024-05-08 16:30:30,206 - INFO - EXTRACT 'order_status' - SUCCESS.
+2024-05-08 16:30:30,216 - INFO - EXTRACT 'publisher' - SUCCESS.
+2024-05-08 16:30:30,221 - INFO - EXTRACT 'shipping_method' - SUCCESS.
+2024-05-08 16:30:30,221 - INFO - Extract All Tables From Sources - SUCCESS
+2024-05-08 16:30:30,222 - INFO - ==================================ENDING EXTRACT DATA=======================================
+2024-05-08 16:30:30,222 - INFO - [pid 87609] Worker Worker(salt=6863844647, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=87609) done      Extract()
+2024-05-08 16:30:30,223 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-05-08 16:30:30,224 - INFO - Informed scheduler that task   Extract__99914b932b   has status   DONE
+2024-05-08 16:30:30,224 - DEBUG - Asking scheduler for work...
+2024-05-08 16:30:30,225 - DEBUG - Pending tasks: 2
+2024-05-08 16:30:30,225 - INFO - [pid 87609] Worker Worker(salt=6863844647, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=87609) running   Load()
+2024-05-08 16:30:30,226 - INFO - Read Load Query - SUCCESS
+2024-05-08 16:30:30,294 - INFO - Read Extracted Data - SUCCESS
+2024-05-08 16:30:30,295 - INFO - Connect to DWH - SUCCESS
+2024-05-08 16:30:30,346 - INFO - Truncate pacbook staging Schema in DWH - SUCCESS
+2024-05-08 16:30:30,346 - INFO - ==================================STARTING LOAD DATA=======================================
+2024-05-08 16:30:30,381 - INFO - LOAD 'pacbook staging.address' - SUCCESS
+2024-05-08 16:30:30,381 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:30:30,388 - INFO - LOAD 'pacbook staging.address_status' - SUCCESS
+2024-05-08 16:30:30,389 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:30:30,487 - INFO - LOAD 'pacbook staging.author' - SUCCESS
+2024-05-08 16:30:30,487 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:30:30,823 - INFO - LOAD 'pacbook staging.book' - SUCCESS
+2024-05-08 16:30:30,823 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:30:31,015 - INFO - LOAD 'pacbook staging.book_author' - SUCCESS
+2024-05-08 16:30:31,015 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:30:31,022 - INFO - LOAD 'pacbook staging.book_language' - SUCCESS
+2024-05-08 16:30:31,022 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:30:31,031 - INFO - LOAD 'pacbook staging.country' - SUCCESS
+2024-05-08 16:30:31,032 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:30:31,159 - INFO - LOAD 'pacbook staging.cust_order' - SUCCESS
+2024-05-08 16:30:31,160 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:30:31,200 - INFO - LOAD 'pacbook staging.customer' - SUCCESS
+2024-05-08 16:30:31,200 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:30:31,245 - INFO - LOAD 'pacbook staging.customer_address' - SUCCESS
+2024-05-08 16:30:31,245 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:30:31,620 - INFO - LOAD 'pacbook staging.order_history' - SUCCESS
+2024-05-08 16:30:31,621 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:30:31,846 - INFO - LOAD 'pacbook staging.order_line' - SUCCESS
+2024-05-08 16:30:31,847 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:30:31,854 - INFO - LOAD 'pacbook staging.order_status' - SUCCESS
+2024-05-08 16:30:31,854 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:30:31,912 - INFO - LOAD 'pacbook staging.publisher' - SUCCESS
+2024-05-08 16:30:31,912 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:30:31,921 - INFO - LOAD 'pacbook staging.shipping_method' - SUCCESS
+2024-05-08 16:30:31,921 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:30:31,922 - INFO - ==================================ENDING LOAD DATA=======================================
+2024-05-08 16:30:31,923 - INFO - [pid 87609] Worker Worker(salt=6863844647, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=87609) done      Load()
+2024-05-08 16:30:31,924 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-05-08 16:30:31,924 - INFO - Informed scheduler that task   Load__99914b932b   has status   DONE
+2024-05-08 16:30:31,925 - DEBUG - Asking scheduler for work...
+2024-05-08 16:30:31,925 - DEBUG - Pending tasks: 1
+2024-05-08 16:30:31,925 - INFO - [pid 87609] Worker Worker(salt=6863844647, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=87609) running   Transform()
+2024-05-08 16:30:31,926 - INFO - ==================================STARTING TRANSFROM DATA=======================================
+[0m09:30:34  Running with dbt=1.7.8
+[0m09:30:35  Registered adapter: postgres=1.7.8
+[0m09:30:36  Found 5 models, 1 snapshot, 2 seeds, 1 operation, 36 tests, 15 sources, 0 exposures, 0 metrics, 859 macros, 0 groups, 0 semantic models
+[0m09:30:36  
+[0m09:30:36  Concurrency: 1 threads (target='dev')
+[0m09:30:36  
+[0m09:30:36  1 of 5 START sql table model final.dim_address ................................. [RUN]
+[0m09:30:36  1 of 5 OK created sql table model final.dim_address ............................ [[32mSELECT 1000[0m in 0.37s]
+[0m09:30:36  2 of 5 START sql table model final.dim_book .................................... [RUN]
+[0m09:30:37  2 of 5 OK created sql table model final.dim_book ............................... [[32mSELECT 10058[0m in 0.40s]
+[0m09:30:37  3 of 5 START sql table model final.dim_customer ................................ [RUN]
+[0m09:30:37  3 of 5 OK created sql table model final.dim_customer ........................... [[32mSELECT 2000[0m in 0.30s]
+[0m09:30:37  4 of 5 START sql table model final.bridge_cust_address ......................... [RUN]
+[0m09:30:37  4 of 5 OK created sql table model final.bridge_cust_address .................... [[32mSELECT 3350[0m in 0.23s]
+[0m09:30:37  5 of 5 START sql table model final.fct_order_book .............................. [RUN]
+[0m09:30:41  5 of 5 OK created sql table model final.fct_order_book ......................... [[32mSELECT 41300[0m in 4.06s]
+[0m09:30:41  
+[0m09:30:41  Running 1 on-run-end hook
+[0m09:30:41  Running dbt Constraints
+[0m09:30:42  Finished dbt Constraints
+[0m09:30:42  1 of 1 START hook: dbt_constraints.on-run-end.0 ................................ [RUN]
+[0m09:30:42  1 of 1 OK hook: dbt_constraints.on-run-end.0 ................................... [[32mOK[0m in 0.00s]
+[0m09:30:42  
+[0m09:30:42  
+[0m09:30:42  Finished running 5 table models, 1 hook in 0 hours 0 minutes and 5.71 seconds (5.71s).
+[0m09:30:42  
+[0m09:30:42  [32mCompleted successfully[0m
+[0m09:30:42  
+[0m09:30:42  Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m09:31:04  Running with dbt=1.7.8
+[0m09:31:04  Registered adapter: postgres=1.7.8
+[0m09:31:05  Found 5 models, 1 snapshot, 2 seeds, 1 operation, 36 tests, 15 sources, 0 exposures, 0 metrics, 859 macros, 0 groups, 0 semantic models
+[0m09:31:05  
+[0m09:31:05  Concurrency: 1 threads (target='dev')
+[0m09:31:05  
+[0m09:31:05  1 of 1 START snapshot final.dim_shipping_method ................................ [RUN]
+[0m09:31:05  1 of 1 OK snapshotted final.dim_shipping_method ................................ [[32mINSERT 0 0[0m in 0.51s]
+[0m09:31:06  
+[0m09:31:06  Running 1 on-run-end hook
+[0m09:31:06  Running dbt Constraints
+[0m09:31:06  Finished dbt Constraints
+[0m09:31:06  1 of 1 START hook: dbt_constraints.on-run-end.0 ................................ [RUN]
+[0m09:31:06  1 of 1 OK hook: dbt_constraints.on-run-end.0 ................................... [[32mOK[0m in 0.00s]
+[0m09:31:06  
+[0m09:31:06  
+[0m09:31:06  Finished running 1 snapshot, 1 hook in 0 hours 0 minutes and 1.38 seconds (1.38s).
+[0m09:31:06  
+[0m09:31:06  [32mCompleted successfully[0m
+[0m09:31:06  
+[0m09:31:06  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m09:31:28  Running with dbt=1.7.8
+[0m09:31:29  Registered adapter: postgres=1.7.8
+[0m09:31:29  Found 5 models, 1 snapshot, 2 seeds, 1 operation, 36 tests, 15 sources, 0 exposures, 0 metrics, 859 macros, 0 groups, 0 semantic models
+[0m09:31:29  
+[0m09:31:29  Concurrency: 1 threads (target='dev')
+[0m09:31:29  
+[0m09:31:29  1 of 36 START test dbt_constraints_foreign_key_bridge_cust_address_address_id__address_id__ref_dim_address_  [RUN]
+[0m09:31:30  1 of 36 PASS dbt_constraints_foreign_key_bridge_cust_address_address_id__address_id__ref_dim_address_  [[32mPASS[0m in 0.14s]
+[0m09:31:30  2 of 36 START test dbt_constraints_foreign_key_bridge_cust_address_customer_id__customer_id__ref_dim_customer_  [RUN]
+[0m09:31:30  2 of 36 PASS dbt_constraints_foreign_key_bridge_cust_address_customer_id__customer_id__ref_dim_customer_  [[32mPASS[0m in 0.07s]
+[0m09:31:30  3 of 36 START test dbt_constraints_foreign_key_fct_order_book_book_id__book_id__ref_dim_book_  [RUN]
+[0m09:31:30  3 of 36 PASS dbt_constraints_foreign_key_fct_order_book_book_id__book_id__ref_dim_book_  [[32mPASS[0m in 0.09s]
+[0m09:31:30  4 of 36 START test dbt_constraints_foreign_key_fct_order_book_customer_id__customer_id__ref_dim_customer_  [RUN]
+[0m09:31:30  4 of 36 PASS dbt_constraints_foreign_key_fct_order_book_customer_id__customer_id__ref_dim_customer_  [[32mPASS[0m in 0.09s]
+[0m09:31:30  5 of 36 START test dbt_constraints_foreign_key_fct_order_book_dest_address_id__address_id__ref_dim_address_  [RUN]
+[0m09:31:30  5 of 36 PASS dbt_constraints_foreign_key_fct_order_book_dest_address_id__address_id__ref_dim_address_  [[32mPASS[0m in 0.08s]
+[0m09:31:30  6 of 36 START test dbt_constraints_foreign_key_fct_order_book_order_date__date_id__ref_dim_date_  [RUN]
+[0m09:31:30  6 of 36 PASS dbt_constraints_foreign_key_fct_order_book_order_date__date_id__ref_dim_date_  [[32mPASS[0m in 0.09s]
+[0m09:31:30  7 of 36 START test dbt_constraints_foreign_key_fct_order_book_order_time__time_id__ref_dim_time_  [RUN]
+[0m09:31:30  7 of 36 PASS dbt_constraints_foreign_key_fct_order_book_order_time__time_id__ref_dim_time_  [[32mPASS[0m in 0.12s]
+[0m09:31:30  8 of 36 START test dbt_constraints_foreign_key_fct_order_book_shipping_method_id__shipping_method_id__ref_dim_shipping_method_  [RUN]
+[0m09:31:30  8 of 36 PASS dbt_constraints_foreign_key_fct_order_book_shipping_method_id__shipping_method_id__ref_dim_shipping_method_  [[32mPASS[0m in 0.09s]
+[0m09:31:30  9 of 36 START test dbt_constraints_foreign_key_fct_order_book_status_date__date_id__ref_dim_date_  [RUN]
+[0m09:31:31  9 of 36 PASS dbt_constraints_foreign_key_fct_order_book_status_date__date_id__ref_dim_date_  [[32mPASS[0m in 0.20s]
+[0m09:31:31  10 of 36 START test dbt_constraints_foreign_key_fct_order_book_status_time__time_id__ref_dim_time_  [RUN]
+[0m09:31:31  10 of 36 PASS dbt_constraints_foreign_key_fct_order_book_status_time__time_id__ref_dim_time_  [[32mPASS[0m in 0.18s]
+[0m09:31:31  11 of 36 START test dbt_constraints_primary_key_bridge_cust_address_cust_address_id  [RUN]
+[0m09:31:31  11 of 36 PASS dbt_constraints_primary_key_bridge_cust_address_cust_address_id .. [[32mPASS[0m in 0.11s]
+[0m09:31:31  12 of 36 START test dbt_constraints_primary_key_dim_address_address_id ......... [RUN]
+[0m09:31:31  12 of 36 PASS dbt_constraints_primary_key_dim_address_address_id ............... [[32mPASS[0m in 0.09s]
+[0m09:31:31  13 of 36 START test dbt_constraints_primary_key_dim_book_book_id ............... [RUN]
+[0m09:31:31  13 of 36 PASS dbt_constraints_primary_key_dim_book_book_id ..................... [[32mPASS[0m in 0.11s]
+[0m09:31:31  14 of 36 START test dbt_constraints_primary_key_dim_customer_customer_id ....... [RUN]
+[0m09:31:31  14 of 36 PASS dbt_constraints_primary_key_dim_customer_customer_id ............. [[32mPASS[0m in 0.11s]
+[0m09:31:31  15 of 36 START test dbt_constraints_primary_key_dim_date_date_id ............... [RUN]
+[0m09:31:31  15 of 36 PASS dbt_constraints_primary_key_dim_date_date_id ..................... [[32mPASS[0m in 0.13s]
+[0m09:31:31  16 of 36 START test dbt_constraints_primary_key_dim_time_time_id ............... [RUN]
+[0m09:31:32  16 of 36 PASS dbt_constraints_primary_key_dim_time_time_id ..................... [[32mPASS[0m in 0.18s]
+[0m09:31:32  17 of 36 START test dbt_constraints_primary_key_fct_order_book_order_id ........ [RUN]
+[0m09:31:32  17 of 36 PASS dbt_constraints_primary_key_fct_order_book_order_id .............. [[32mPASS[0m in 0.13s]
+[0m09:31:32  18 of 36 START test not_null_bridge_cust_address_address_id .................... [RUN]
+[0m09:31:32  18 of 36 PASS not_null_bridge_cust_address_address_id .......................... [[32mPASS[0m in 0.08s]
+[0m09:31:32  19 of 36 START test not_null_bridge_cust_address_cust_address_id ............... [RUN]
+[0m09:31:32  19 of 36 PASS not_null_bridge_cust_address_cust_address_id ..................... [[32mPASS[0m in 0.07s]
+[0m09:31:32  20 of 36 START test not_null_bridge_cust_address_customer_id ................... [RUN]
+[0m09:31:32  20 of 36 PASS not_null_bridge_cust_address_customer_id ......................... [[32mPASS[0m in 0.07s]
+[0m09:31:32  21 of 36 START test not_null_dim_address_address_id ............................ [RUN]
+[0m09:31:32  21 of 36 PASS not_null_dim_address_address_id .................................. [[32mPASS[0m in 0.09s]
+[0m09:31:32  22 of 36 START test not_null_dim_address_nk_address_id ......................... [RUN]
+[0m09:31:32  22 of 36 PASS not_null_dim_address_nk_address_id ............................... [[32mPASS[0m in 0.09s]
+[0m09:31:32  23 of 36 START test not_null_dim_book_book_id .................................. [RUN]
+[0m09:31:32  23 of 36 PASS not_null_dim_book_book_id ........................................ [[32mPASS[0m in 0.09s]
+[0m09:31:32  24 of 36 START test not_null_dim_book_nk_book_id ............................... [RUN]
+[0m09:31:32  24 of 36 PASS not_null_dim_book_nk_book_id ..................................... [[32mPASS[0m in 0.08s]
+[0m09:31:32  25 of 36 START test not_null_dim_customer_customer_id .......................... [RUN]
+[0m09:31:32  25 of 36 PASS not_null_dim_customer_customer_id ................................ [[32mPASS[0m in 0.11s]
+[0m09:31:32  26 of 36 START test not_null_dim_customer_nk_customer_id ....................... [RUN]
+[0m09:31:33  26 of 36 PASS not_null_dim_customer_nk_customer_id ............................. [[32mPASS[0m in 0.09s]
+[0m09:31:33  27 of 36 START test not_null_dim_date_date_id .................................. [RUN]
+[0m09:31:33  27 of 36 PASS not_null_dim_date_date_id ........................................ [[32mPASS[0m in 0.10s]
+[0m09:31:33  28 of 36 START test not_null_dim_time_time_id .................................. [RUN]
+[0m09:31:33  28 of 36 PASS not_null_dim_time_time_id ........................................ [[32mPASS[0m in 0.05s]
+[0m09:31:33  29 of 36 START test not_null_fct_order_book_book_id ............................ [RUN]
+[0m09:31:33  29 of 36 PASS not_null_fct_order_book_book_id .................................. [[32mPASS[0m in 0.07s]
+[0m09:31:33  30 of 36 START test not_null_fct_order_book_customer_id ........................ [RUN]
+[0m09:31:33  30 of 36 PASS not_null_fct_order_book_customer_id .............................. [[32mPASS[0m in 0.07s]
+[0m09:31:33  31 of 36 START test not_null_fct_order_book_dest_address_id .................... [RUN]
+[0m09:31:33  31 of 36 PASS not_null_fct_order_book_dest_address_id .......................... [[32mPASS[0m in 0.14s]
+[0m09:31:33  32 of 36 START test not_null_fct_order_book_order_date ......................... [RUN]
+[0m09:31:33  32 of 36 PASS not_null_fct_order_book_order_date ............................... [[32mPASS[0m in 0.06s]
+[0m09:31:33  33 of 36 START test not_null_fct_order_book_order_id ........................... [RUN]
+[0m09:31:33  33 of 36 PASS not_null_fct_order_book_order_id ................................. [[32mPASS[0m in 0.06s]
+[0m09:31:33  34 of 36 START test not_null_fct_order_book_order_time ......................... [RUN]
+[0m09:31:33  34 of 36 PASS not_null_fct_order_book_order_time ............................... [[32mPASS[0m in 0.07s]
+[0m09:31:33  35 of 36 START test not_null_fct_order_book_status_date ........................ [RUN]
+[0m09:31:33  35 of 36 PASS not_null_fct_order_book_status_date .............................. [[32mPASS[0m in 0.07s]
+[0m09:31:33  36 of 36 START test not_null_fct_order_book_status_time ........................ [RUN]
+[0m09:31:33  36 of 36 PASS not_null_fct_order_book_status_time .............................. [[32mPASS[0m in 0.07s]
+[0m09:31:33  
+[0m09:31:33  Running 1 on-run-end hook
+[0m09:31:33  Running dbt Constraints
+[0m09:31:34  Creating not null constraint for: address_id in "pacbook-dwh"."final"."bridge_cust_address"
+[0m09:31:34  Creating not null constraint for: cust_address_id in "pacbook-dwh"."final"."bridge_cust_address"
+[0m09:31:34  Creating not null constraint for: customer_id in "pacbook-dwh"."final"."bridge_cust_address"
+[0m09:31:34  Creating not null constraint for: address_id in "pacbook-dwh"."final"."dim_address"
+[0m09:31:34  Creating not null constraint for: nk_address_id in "pacbook-dwh"."final"."dim_address"
+[0m09:31:34  Creating not null constraint for: book_id in "pacbook-dwh"."final"."dim_book"
+[0m09:31:34  Creating not null constraint for: nk_book_id in "pacbook-dwh"."final"."dim_book"
+[0m09:31:34  Creating not null constraint for: customer_id in "pacbook-dwh"."final"."dim_customer"
+[0m09:31:34  Creating not null constraint for: nk_customer_id in "pacbook-dwh"."final"."dim_customer"
+[0m09:31:34  Creating not null constraint for: date_id in "pacbook-dwh"."final"."dim_date"
+[0m09:31:34  Creating not null constraint for: time_id in "pacbook-dwh"."final"."dim_time"
+[0m09:31:34  Creating not null constraint for: book_id in "pacbook-dwh"."final"."fct_order_book"
+[0m09:31:34  Creating not null constraint for: customer_id in "pacbook-dwh"."final"."fct_order_book"
+[0m09:31:34  Creating not null constraint for: dest_address_id in "pacbook-dwh"."final"."fct_order_book"
+[0m09:31:34  Creating not null constraint for: order_date in "pacbook-dwh"."final"."fct_order_book"
+[0m09:31:34  Creating not null constraint for: order_id in "pacbook-dwh"."final"."fct_order_book"
+[0m09:31:34  Creating not null constraint for: order_time in "pacbook-dwh"."final"."fct_order_book"
+[0m09:31:34  Creating not null constraint for: status_date in "pacbook-dwh"."final"."fct_order_book"
+[0m09:31:34  Creating not null constraint for: status_time in "pacbook-dwh"."final"."fct_order_book"
+[0m09:31:34  Creating not null constraint for: cust_address_id in "pacbook-dwh"."final"."bridge_cust_address"
+[0m09:31:34  Creating primary key: BRIDGE_CUST_ADDRESS_CUST_ADDRESS_ID_PK
+[0m09:31:34  Creating not null constraint for: address_id in "pacbook-dwh"."final"."dim_address"
+[0m09:31:35  Creating primary key: DIM_ADDRESS_ADDRESS_ID_PK
+[0m09:31:35  Creating not null constraint for: book_id in "pacbook-dwh"."final"."dim_book"
+[0m09:31:35  Creating primary key: DIM_BOOK_BOOK_ID_PK
+[0m09:31:35  Creating not null constraint for: customer_id in "pacbook-dwh"."final"."dim_customer"
+[0m09:31:35  Creating primary key: DIM_CUSTOMER_CUSTOMER_ID_PK
+[0m09:31:35  Creating not null constraint for: date_id in "pacbook-dwh"."final"."dim_date"
+[0m09:31:35  Creating not null constraint for: time_id in "pacbook-dwh"."final"."dim_time"
+[0m09:31:35  Creating not null constraint for: order_id in "pacbook-dwh"."final"."fct_order_book"
+[0m09:31:35  Creating primary key: FCT_ORDER_BOOK_ORDER_ID_PK
+[0m09:31:35  Creating foreign key: BRIDGE_CUST_ADDRESS_ADDRESS_ID_FK referencing dim_address ['address_id']
+[0m09:31:35  Creating foreign key: BRIDGE_CUST_ADDRESS_CUSTOMER_ID_FK referencing dim_customer ['customer_id']
+[0m09:31:35  Creating foreign key: FCT_ORDER_BOOK_BOOK_ID_FK referencing dim_book ['book_id']
+[0m09:31:35  Creating foreign key: FCT_ORDER_BOOK_CUSTOMER_ID_FK referencing dim_customer ['customer_id']
+[0m09:31:35  Creating foreign key: FCT_ORDER_BOOK_DEST_ADDRESS_ID_FK referencing dim_address ['address_id']
+[0m09:31:35  Creating foreign key: FCT_ORDER_BOOK_ORDER_DATE_FK referencing dim_date ['date_id']
+[0m09:31:36  Creating foreign key: FCT_ORDER_BOOK_ORDER_TIME_FK referencing dim_time ['time_id']
+[0m09:31:36  Skipping FCT_ORDER_BOOK_SHIPPING_METHOD_ID_FK because a PK/UK was not found on the PK table: "pacbook-dwh"."final"."dim_shipping_method" ['shipping_method_id']
+[0m09:31:36  Creating foreign key: FCT_ORDER_BOOK_STATUS_DATE_FK referencing dim_date ['date_id']
+[0m09:31:36  Creating foreign key: FCT_ORDER_BOOK_STATUS_TIME_FK referencing dim_time ['time_id']
+[0m09:31:36  Finished dbt Constraints
+[0m09:31:36  1 of 1 START hook: dbt_constraints.on-run-end.0 ................................ [RUN]
+[0m09:31:36  1 of 1 OK hook: dbt_constraints.on-run-end.0 ................................... [[32mOK[0m in 0.00s]
+[0m09:31:36  
+[0m09:31:36  
+[0m09:31:36  Finished running 36 tests, 1 hook in 0 hours 0 minutes and 6.51 seconds (6.51s).
+[0m09:31:36  
+[0m09:31:36  [32mCompleted successfully[0m
+[0m09:31:36  
+[0m09:31:36  Done. PASS=36 WARN=0 ERROR=0 SKIP=0 TOTAL=36
+2024-05-08 16:31:46,748 - INFO - ==================================ENDING TRANSFROM DATA=======================================
+2024-05-08 16:31:46,748 - INFO - [pid 87609] Worker Worker(salt=6863844647, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=87609) done      Transform()
+2024-05-08 16:31:46,749 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-05-08 16:31:46,750 - INFO - Informed scheduler that task   Transform__99914b932b   has status   DONE
+2024-05-08 16:31:46,751 - DEBUG - Asking scheduler for work...
+2024-05-08 16:31:46,751 - DEBUG - Done
+2024-05-08 16:31:46,751 - DEBUG - There are no more tasks to run at this time
+2024-05-08 16:31:46,751 - INFO - Worker Worker(salt=6863844647, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=87609) was stopped. Shutting down Keep-Alive thread
+2024-05-08 16:31:46,753 - INFO - 
+===== Luigi Execution Summary =====
+
+Scheduled 3 tasks of which:
+* 3 ran successfully:
+    - 1 Extract()
+    - 1 Load()
+    - 1 Transform()
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+2024-05-08 16:40:22,531 - INFO - ==================================STARTING EXTRACT DATA=======================================
+2024-05-08 16:40:22,570 - INFO - EXTRACT 'address' - SUCCESS.
+2024-05-08 16:40:22,575 - INFO - EXTRACT 'address_status' - SUCCESS.
+2024-05-08 16:40:22,600 - INFO - EXTRACT 'author' - SUCCESS.
+2024-05-08 16:40:22,683 - INFO - EXTRACT 'book' - SUCCESS.
+2024-05-08 16:40:22,752 - INFO - EXTRACT 'book_author' - SUCCESS.
+2024-05-08 16:40:22,757 - INFO - EXTRACT 'book_language' - SUCCESS.
+2024-05-08 16:40:22,761 - INFO - EXTRACT 'country' - SUCCESS.
+2024-05-08 16:40:22,817 - INFO - EXTRACT 'cust_order' - SUCCESS.
+2024-05-08 16:40:22,828 - INFO - EXTRACT 'customer' - SUCCESS.
+2024-05-08 16:40:22,839 - INFO - EXTRACT 'customer_address' - SUCCESS.
+2024-05-08 16:40:22,968 - INFO - EXTRACT 'order_history' - SUCCESS.
+2024-05-08 16:40:23,069 - INFO - EXTRACT 'order_line' - SUCCESS.
+2024-05-08 16:40:23,074 - INFO - EXTRACT 'order_status' - SUCCESS.
+2024-05-08 16:40:23,084 - INFO - EXTRACT 'publisher' - SUCCESS.
+2024-05-08 16:40:23,089 - INFO - EXTRACT 'shipping_method' - SUCCESS.
+2024-05-08 16:40:23,089 - INFO - Extract All Tables From Sources - SUCCESS
+2024-05-08 16:40:23,091 - INFO - ==================================ENDING EXTRACT DATA=======================================
+2024-05-08 16:40:23,091 - INFO - [pid 91008] Worker Worker(salt=6221448416, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=91008) done      Extract()
+2024-05-08 16:40:23,093 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-05-08 16:40:23,093 - INFO - Informed scheduler that task   Extract__99914b932b   has status   DONE
+2024-05-08 16:40:23,094 - DEBUG - Asking scheduler for work...
+2024-05-08 16:40:23,094 - DEBUG - Pending tasks: 2
+2024-05-08 16:40:23,095 - INFO - [pid 91008] Worker Worker(salt=6221448416, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=91008) running   Load()
+2024-05-08 16:40:23,096 - INFO - Read Load Query - SUCCESS
+2024-05-08 16:40:23,170 - INFO - Read Extracted Data - SUCCESS
+2024-05-08 16:40:23,171 - INFO - Connect to DWH - SUCCESS
+2024-05-08 16:40:23,227 - INFO - Truncate pacbook staging Schema in DWH - SUCCESS
+2024-05-08 16:40:23,228 - INFO - ==================================STARTING LOAD DATA=======================================
+2024-05-08 16:40:23,262 - INFO - LOAD 'pacbook staging.address' - SUCCESS
+2024-05-08 16:40:23,262 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:40:23,269 - INFO - LOAD 'pacbook staging.address_status' - SUCCESS
+2024-05-08 16:40:23,270 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:40:23,378 - INFO - LOAD 'pacbook staging.author' - SUCCESS
+2024-05-08 16:40:23,378 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:40:23,735 - INFO - LOAD 'pacbook staging.book' - SUCCESS
+2024-05-08 16:40:23,735 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:40:23,940 - INFO - LOAD 'pacbook staging.book_author' - SUCCESS
+2024-05-08 16:40:23,940 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:40:23,948 - INFO - LOAD 'pacbook staging.book_language' - SUCCESS
+2024-05-08 16:40:23,948 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:40:23,958 - INFO - LOAD 'pacbook staging.country' - SUCCESS
+2024-05-08 16:40:23,958 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:40:24,089 - INFO - LOAD 'pacbook staging.cust_order' - SUCCESS
+2024-05-08 16:40:24,089 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:40:24,130 - INFO - LOAD 'pacbook staging.customer' - SUCCESS
+2024-05-08 16:40:24,130 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:40:24,176 - INFO - LOAD 'pacbook staging.customer_address' - SUCCESS
+2024-05-08 16:40:24,177 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:40:24,531 - INFO - LOAD 'pacbook staging.order_history' - SUCCESS
+2024-05-08 16:40:24,531 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:40:24,760 - INFO - LOAD 'pacbook staging.order_line' - SUCCESS
+2024-05-08 16:40:24,760 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:40:24,768 - INFO - LOAD 'pacbook staging.order_status' - SUCCESS
+2024-05-08 16:40:24,768 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:40:24,830 - INFO - LOAD 'pacbook staging.publisher' - SUCCESS
+2024-05-08 16:40:24,830 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:40:24,837 - INFO - LOAD 'pacbook staging.shipping_method' - SUCCESS
+2024-05-08 16:40:24,838 - INFO - LOAD All Tables To DWH-pacbook staging - SUCCESS
+2024-05-08 16:40:24,839 - INFO - ==================================ENDING LOAD DATA=======================================
+2024-05-08 16:40:24,840 - INFO - [pid 91008] Worker Worker(salt=6221448416, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=91008) done      Load()
+2024-05-08 16:40:24,841 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-05-08 16:40:24,841 - INFO - Informed scheduler that task   Load__99914b932b   has status   DONE
+2024-05-08 16:40:24,841 - DEBUG - Asking scheduler for work...
+2024-05-08 16:40:24,841 - DEBUG - Pending tasks: 1
+2024-05-08 16:40:24,842 - INFO - [pid 91008] Worker Worker(salt=6221448416, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=91008) running   Transform()
+2024-05-08 16:40:24,842 - INFO - ==================================STARTING TRANSFROM DATA=======================================
+[0m09:40:27  Running with dbt=1.7.8
+[0m09:40:27  Registered adapter: postgres=1.7.8
+[0m09:40:27  Found 5 models, 1 snapshot, 2 seeds, 1 operation, 36 tests, 15 sources, 0 exposures, 0 metrics, 859 macros, 0 groups, 0 semantic models
+[0m09:40:27  
+[0m09:40:28  Concurrency: 1 threads (target='dev')
+[0m09:40:28  
+[0m09:40:28  1 of 1 START snapshot final.dim_shipping_method ................................ [RUN]
+[0m09:40:28  1 of 1 OK snapshotted final.dim_shipping_method ................................ [[32mINSERT 0 0[0m in 0.38s]
+[0m09:40:28  
+[0m09:40:28  Running 1 on-run-end hook
+[0m09:40:28  Running dbt Constraints
+[0m09:40:28  Finished dbt Constraints
+[0m09:40:28  1 of 1 START hook: dbt_constraints.on-run-end.0 ................................ [RUN]
+[0m09:40:28  1 of 1 OK hook: dbt_constraints.on-run-end.0 ................................... [[32mOK[0m in 0.00s]
+[0m09:40:28  
+[0m09:40:28  
+[0m09:40:28  Finished running 1 snapshot, 1 hook in 0 hours 0 minutes and 0.71 seconds (0.71s).
+[0m09:40:28  
+[0m09:40:28  [32mCompleted successfully[0m
+[0m09:40:28  
+[0m09:40:28  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m09:40:41  Running with dbt=1.7.8
+[0m09:40:41  Registered adapter: postgres=1.7.8
+[0m09:40:42  Found 5 models, 1 snapshot, 2 seeds, 1 operation, 36 tests, 15 sources, 0 exposures, 0 metrics, 859 macros, 0 groups, 0 semantic models
+[0m09:40:42  
+[0m09:40:42  Concurrency: 1 threads (target='dev')
+[0m09:40:42  
+[0m09:40:42  1 of 5 START sql table model final.dim_address ................................. [RUN]
+[0m09:40:42  1 of 5 OK created sql table model final.dim_address ............................ [[32mSELECT 1000[0m in 0.17s]
+[0m09:40:42  2 of 5 START sql table model final.dim_book .................................... [RUN]
+[0m09:40:42  2 of 5 OK created sql table model final.dim_book ............................... [[32mSELECT 10058[0m in 0.19s]
+[0m09:40:42  3 of 5 START sql table model final.dim_customer ................................ [RUN]
+[0m09:40:42  3 of 5 OK created sql table model final.dim_customer ........................... [[32mSELECT 2000[0m in 0.16s]
+[0m09:40:42  4 of 5 START sql table model final.bridge_cust_address ......................... [RUN]
+[0m09:40:42  4 of 5 OK created sql table model final.bridge_cust_address .................... [[32mSELECT 3350[0m in 0.11s]
+[0m09:40:42  5 of 5 START sql table model final.fct_order_book .............................. [RUN]
+[0m09:40:45  5 of 5 OK created sql table model final.fct_order_book ......................... [[32mSELECT 41300[0m in 2.93s]
+[0m09:40:45  
+[0m09:40:45  Running 1 on-run-end hook
+[0m09:40:45  Running dbt Constraints
+[0m09:40:46  Finished dbt Constraints
+[0m09:40:46  1 of 1 START hook: dbt_constraints.on-run-end.0 ................................ [RUN]
+[0m09:40:46  1 of 1 OK hook: dbt_constraints.on-run-end.0 ................................... [[32mOK[0m in 0.00s]
+[0m09:40:46  
+[0m09:40:46  
+[0m09:40:46  Finished running 5 table models, 1 hook in 0 hours 0 minutes and 3.81 seconds (3.81s).
+[0m09:40:46  
+[0m09:40:46  [32mCompleted successfully[0m
+[0m09:40:46  
+[0m09:40:46  Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m09:40:59  Running with dbt=1.7.8
+[0m09:40:59  Registered adapter: postgres=1.7.8
+[0m09:40:59  Found 5 models, 1 snapshot, 2 seeds, 1 operation, 36 tests, 15 sources, 0 exposures, 0 metrics, 859 macros, 0 groups, 0 semantic models
+[0m09:40:59  
+[0m09:40:59  Concurrency: 1 threads (target='dev')
+[0m09:40:59  
+[0m09:40:59  1 of 36 START test dbt_constraints_foreign_key_bridge_cust_address_address_id__address_id__ref_dim_address_  [RUN]
+[0m09:40:59  1 of 36 PASS dbt_constraints_foreign_key_bridge_cust_address_address_id__address_id__ref_dim_address_  [[32mPASS[0m in 0.12s]
+[0m09:40:59  2 of 36 START test dbt_constraints_foreign_key_bridge_cust_address_customer_id__customer_id__ref_dim_customer_  [RUN]
+[0m09:40:59  2 of 36 PASS dbt_constraints_foreign_key_bridge_cust_address_customer_id__customer_id__ref_dim_customer_  [[32mPASS[0m in 0.06s]
+[0m09:40:59  3 of 36 START test dbt_constraints_foreign_key_fct_order_book_book_id__book_id__ref_dim_book_  [RUN]
+[0m09:40:59  3 of 36 PASS dbt_constraints_foreign_key_fct_order_book_book_id__book_id__ref_dim_book_  [[32mPASS[0m in 0.08s]
+[0m09:40:59  4 of 36 START test dbt_constraints_foreign_key_fct_order_book_customer_id__customer_id__ref_dim_customer_  [RUN]
+[0m09:41:00  4 of 36 PASS dbt_constraints_foreign_key_fct_order_book_customer_id__customer_id__ref_dim_customer_  [[32mPASS[0m in 0.11s]
+[0m09:41:00  5 of 36 START test dbt_constraints_foreign_key_fct_order_book_dest_address_id__address_id__ref_dim_address_  [RUN]
+[0m09:41:00  5 of 36 PASS dbt_constraints_foreign_key_fct_order_book_dest_address_id__address_id__ref_dim_address_  [[32mPASS[0m in 0.10s]
+[0m09:41:00  6 of 36 START test dbt_constraints_foreign_key_fct_order_book_order_date__date_id__ref_dim_date_  [RUN]
+[0m09:41:00  6 of 36 PASS dbt_constraints_foreign_key_fct_order_book_order_date__date_id__ref_dim_date_  [[32mPASS[0m in 0.09s]
+[0m09:41:00  7 of 36 START test dbt_constraints_foreign_key_fct_order_book_order_time__time_id__ref_dim_time_  [RUN]
+[0m09:41:00  7 of 36 PASS dbt_constraints_foreign_key_fct_order_book_order_time__time_id__ref_dim_time_  [[32mPASS[0m in 0.10s]
+[0m09:41:00  8 of 36 START test dbt_constraints_foreign_key_fct_order_book_shipping_method_id__shipping_method_id__ref_dim_shipping_method_  [RUN]
+[0m09:41:00  8 of 36 PASS dbt_constraints_foreign_key_fct_order_book_shipping_method_id__shipping_method_id__ref_dim_shipping_method_  [[32mPASS[0m in 0.08s]
+[0m09:41:00  9 of 36 START test dbt_constraints_foreign_key_fct_order_book_status_date__date_id__ref_dim_date_  [RUN]
+[0m09:41:00  9 of 36 PASS dbt_constraints_foreign_key_fct_order_book_status_date__date_id__ref_dim_date_  [[32mPASS[0m in 0.08s]
+[0m09:41:00  10 of 36 START test dbt_constraints_foreign_key_fct_order_book_status_time__time_id__ref_dim_time_  [RUN]
+[0m09:41:00  10 of 36 PASS dbt_constraints_foreign_key_fct_order_book_status_time__time_id__ref_dim_time_  [[32mPASS[0m in 0.12s]
+[0m09:41:00  11 of 36 START test dbt_constraints_primary_key_bridge_cust_address_cust_address_id  [RUN]
+[0m09:41:00  11 of 36 PASS dbt_constraints_primary_key_bridge_cust_address_cust_address_id .. [[32mPASS[0m in 0.07s]
+[0m09:41:00  12 of 36 START test dbt_constraints_primary_key_dim_address_address_id ......... [RUN]
+[0m09:41:00  12 of 36 PASS dbt_constraints_primary_key_dim_address_address_id ............... [[32mPASS[0m in 0.06s]
+[0m09:41:00  13 of 36 START test dbt_constraints_primary_key_dim_book_book_id ............... [RUN]
+[0m09:41:00  13 of 36 PASS dbt_constraints_primary_key_dim_book_book_id ..................... [[32mPASS[0m in 0.07s]
+[0m09:41:00  14 of 36 START test dbt_constraints_primary_key_dim_customer_customer_id ....... [RUN]
+[0m09:41:00  14 of 36 PASS dbt_constraints_primary_key_dim_customer_customer_id ............. [[32mPASS[0m in 0.06s]
+[0m09:41:00  15 of 36 START test dbt_constraints_primary_key_dim_date_date_id ............... [RUN]
+[0m09:41:01  15 of 36 PASS dbt_constraints_primary_key_dim_date_date_id ..................... [[32mPASS[0m in 0.07s]
+[0m09:41:01  16 of 36 START test dbt_constraints_primary_key_dim_time_time_id ............... [RUN]
+[0m09:41:01  16 of 36 PASS dbt_constraints_primary_key_dim_time_time_id ..................... [[32mPASS[0m in 0.16s]
+[0m09:41:01  17 of 36 START test dbt_constraints_primary_key_fct_order_book_order_id ........ [RUN]
+[0m09:41:01  17 of 36 PASS dbt_constraints_primary_key_fct_order_book_order_id .............. [[32mPASS[0m in 0.16s]
+[0m09:41:01  18 of 36 START test not_null_bridge_cust_address_address_id .................... [RUN]
+[0m09:41:01  18 of 36 PASS not_null_bridge_cust_address_address_id .......................... [[32mPASS[0m in 0.08s]
+[0m09:41:01  19 of 36 START test not_null_bridge_cust_address_cust_address_id ............... [RUN]
+[0m09:41:01  19 of 36 PASS not_null_bridge_cust_address_cust_address_id ..................... [[32mPASS[0m in 0.15s]
+[0m09:41:01  20 of 36 START test not_null_bridge_cust_address_customer_id ................... [RUN]
+[0m09:41:01  20 of 36 PASS not_null_bridge_cust_address_customer_id ......................... [[32mPASS[0m in 0.16s]
+[0m09:41:01  21 of 36 START test not_null_dim_address_address_id ............................ [RUN]
+[0m09:41:01  21 of 36 PASS not_null_dim_address_address_id .................................. [[32mPASS[0m in 0.14s]
+[0m09:41:01  22 of 36 START test not_null_dim_address_nk_address_id ......................... [RUN]
+[0m09:41:02  22 of 36 PASS not_null_dim_address_nk_address_id ............................... [[32mPASS[0m in 0.08s]
+[0m09:41:02  23 of 36 START test not_null_dim_book_book_id .................................. [RUN]
+[0m09:41:02  23 of 36 PASS not_null_dim_book_book_id ........................................ [[32mPASS[0m in 0.09s]
+[0m09:41:02  24 of 36 START test not_null_dim_book_nk_book_id ............................... [RUN]
+[0m09:41:02  24 of 36 PASS not_null_dim_book_nk_book_id ..................................... [[32mPASS[0m in 0.07s]
+[0m09:41:02  25 of 36 START test not_null_dim_customer_customer_id .......................... [RUN]
+[0m09:41:02  25 of 36 PASS not_null_dim_customer_customer_id ................................ [[32mPASS[0m in 0.07s]
+[0m09:41:02  26 of 36 START test not_null_dim_customer_nk_customer_id ....................... [RUN]
+[0m09:41:02  26 of 36 PASS not_null_dim_customer_nk_customer_id ............................. [[32mPASS[0m in 0.06s]
+[0m09:41:02  27 of 36 START test not_null_dim_date_date_id .................................. [RUN]
+[0m09:41:02  27 of 36 PASS not_null_dim_date_date_id ........................................ [[32mPASS[0m in 0.06s]
+[0m09:41:02  28 of 36 START test not_null_dim_time_time_id .................................. [RUN]
+[0m09:41:02  28 of 36 PASS not_null_dim_time_time_id ........................................ [[32mPASS[0m in 0.06s]
+[0m09:41:02  29 of 36 START test not_null_fct_order_book_book_id ............................ [RUN]
+[0m09:41:02  29 of 36 PASS not_null_fct_order_book_book_id .................................. [[32mPASS[0m in 0.08s]
+[0m09:41:02  30 of 36 START test not_null_fct_order_book_customer_id ........................ [RUN]
+[0m09:41:02  30 of 36 PASS not_null_fct_order_book_customer_id .............................. [[32mPASS[0m in 0.09s]
+[0m09:41:02  31 of 36 START test not_null_fct_order_book_dest_address_id .................... [RUN]
+[0m09:41:02  31 of 36 PASS not_null_fct_order_book_dest_address_id .......................... [[32mPASS[0m in 0.21s]
+[0m09:41:02  32 of 36 START test not_null_fct_order_book_order_date ......................... [RUN]
+[0m09:41:02  32 of 36 PASS not_null_fct_order_book_order_date ............................... [[32mPASS[0m in 0.10s]
+[0m09:41:02  33 of 36 START test not_null_fct_order_book_order_id ........................... [RUN]
+[0m09:41:03  33 of 36 PASS not_null_fct_order_book_order_id ................................. [[32mPASS[0m in 0.14s]
+[0m09:41:03  34 of 36 START test not_null_fct_order_book_order_time ......................... [RUN]
+[0m09:41:03  34 of 36 PASS not_null_fct_order_book_order_time ............................... [[32mPASS[0m in 0.13s]
+[0m09:41:03  35 of 36 START test not_null_fct_order_book_status_date ........................ [RUN]
+[0m09:41:03  35 of 36 PASS not_null_fct_order_book_status_date .............................. [[32mPASS[0m in 0.13s]
+[0m09:41:03  36 of 36 START test not_null_fct_order_book_status_time ........................ [RUN]
+[0m09:41:03  36 of 36 PASS not_null_fct_order_book_status_time .............................. [[32mPASS[0m in 0.12s]
+[0m09:41:03  
+[0m09:41:03  Running 1 on-run-end hook
+[0m09:41:03  Running dbt Constraints
+[0m09:41:03  Creating not null constraint for: address_id in "pacbook-dwh"."final"."bridge_cust_address"
+[0m09:41:03  Creating not null constraint for: cust_address_id in "pacbook-dwh"."final"."bridge_cust_address"
+[0m09:41:03  Creating not null constraint for: customer_id in "pacbook-dwh"."final"."bridge_cust_address"
+[0m09:41:04  Creating not null constraint for: address_id in "pacbook-dwh"."final"."dim_address"
+[0m09:41:04  Creating not null constraint for: nk_address_id in "pacbook-dwh"."final"."dim_address"
+[0m09:41:04  Creating not null constraint for: book_id in "pacbook-dwh"."final"."dim_book"
+[0m09:41:04  Creating not null constraint for: nk_book_id in "pacbook-dwh"."final"."dim_book"
+[0m09:41:04  Creating not null constraint for: customer_id in "pacbook-dwh"."final"."dim_customer"
+[0m09:41:04  Creating not null constraint for: nk_customer_id in "pacbook-dwh"."final"."dim_customer"
+[0m09:41:04  Creating not null constraint for: date_id in "pacbook-dwh"."final"."dim_date"
+[0m09:41:04  Creating not null constraint for: time_id in "pacbook-dwh"."final"."dim_time"
+[0m09:41:04  Creating not null constraint for: book_id in "pacbook-dwh"."final"."fct_order_book"
+[0m09:41:04  Creating not null constraint for: customer_id in "pacbook-dwh"."final"."fct_order_book"
+[0m09:41:04  Creating not null constraint for: dest_address_id in "pacbook-dwh"."final"."fct_order_book"
+[0m09:41:04  Creating not null constraint for: order_date in "pacbook-dwh"."final"."fct_order_book"
+[0m09:41:04  Creating not null constraint for: order_id in "pacbook-dwh"."final"."fct_order_book"
+[0m09:41:04  Creating not null constraint for: order_time in "pacbook-dwh"."final"."fct_order_book"
+[0m09:41:04  Creating not null constraint for: status_date in "pacbook-dwh"."final"."fct_order_book"
+[0m09:41:04  Creating not null constraint for: status_time in "pacbook-dwh"."final"."fct_order_book"
+[0m09:41:04  Creating not null constraint for: cust_address_id in "pacbook-dwh"."final"."bridge_cust_address"
+[0m09:41:04  Creating primary key: BRIDGE_CUST_ADDRESS_CUST_ADDRESS_ID_PK
+[0m09:41:05  Creating not null constraint for: address_id in "pacbook-dwh"."final"."dim_address"
+[0m09:41:05  Creating primary key: DIM_ADDRESS_ADDRESS_ID_PK
+[0m09:41:05  Creating not null constraint for: book_id in "pacbook-dwh"."final"."dim_book"
+[0m09:41:05  Creating primary key: DIM_BOOK_BOOK_ID_PK
+[0m09:41:05  Creating not null constraint for: customer_id in "pacbook-dwh"."final"."dim_customer"
+[0m09:41:05  Creating primary key: DIM_CUSTOMER_CUSTOMER_ID_PK
+[0m09:41:05  Creating not null constraint for: date_id in "pacbook-dwh"."final"."dim_date"
+[0m09:41:05  Creating not null constraint for: time_id in "pacbook-dwh"."final"."dim_time"
+[0m09:41:05  Creating not null constraint for: order_id in "pacbook-dwh"."final"."fct_order_book"
+[0m09:41:05  Creating primary key: FCT_ORDER_BOOK_ORDER_ID_PK
+[0m09:41:05  Creating foreign key: BRIDGE_CUST_ADDRESS_ADDRESS_ID_FK referencing dim_address ['address_id']
+[0m09:41:05  Creating foreign key: BRIDGE_CUST_ADDRESS_CUSTOMER_ID_FK referencing dim_customer ['customer_id']
+[0m09:41:05  Creating foreign key: FCT_ORDER_BOOK_BOOK_ID_FK referencing dim_book ['book_id']
+[0m09:41:05  Creating foreign key: FCT_ORDER_BOOK_CUSTOMER_ID_FK referencing dim_customer ['customer_id']
+[0m09:41:05  Creating foreign key: FCT_ORDER_BOOK_DEST_ADDRESS_ID_FK referencing dim_address ['address_id']
+[0m09:41:05  Creating foreign key: FCT_ORDER_BOOK_ORDER_DATE_FK referencing dim_date ['date_id']
+[0m09:41:06  Creating foreign key: FCT_ORDER_BOOK_ORDER_TIME_FK referencing dim_time ['time_id']
+[0m09:41:06  Skipping FCT_ORDER_BOOK_SHIPPING_METHOD_ID_FK because a PK/UK was not found on the PK table: "pacbook-dwh"."final"."dim_shipping_method" ['shipping_method_id']
+[0m09:41:06  Creating foreign key: FCT_ORDER_BOOK_STATUS_DATE_FK referencing dim_date ['date_id']
+[0m09:41:06  Creating foreign key: FCT_ORDER_BOOK_STATUS_TIME_FK referencing dim_time ['time_id']
+[0m09:41:06  Finished dbt Constraints
+[0m09:41:06  1 of 1 START hook: dbt_constraints.on-run-end.0 ................................ [RUN]
+[0m09:41:06  1 of 1 OK hook: dbt_constraints.on-run-end.0 ................................... [[32mOK[0m in 0.00s]
+[0m09:41:06  
+[0m09:41:06  
+[0m09:41:06  Finished running 36 tests, 1 hook in 0 hours 0 minutes and 6.74 seconds (6.74s).
+[0m09:41:06  
+[0m09:41:06  [32mCompleted successfully[0m
+[0m09:41:06  
+[0m09:41:06  Done. PASS=36 WARN=0 ERROR=0 SKIP=0 TOTAL=36
+2024-05-08 16:41:17,202 - INFO - ==================================ENDING TRANSFROM DATA=======================================
+2024-05-08 16:41:17,203 - INFO - [pid 91008] Worker Worker(salt=6221448416, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=91008) done      Transform()
+2024-05-08 16:41:17,205 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-05-08 16:41:17,254 - INFO - Informed scheduler that task   Transform__99914b932b   has status   DONE
+2024-05-08 16:41:17,255 - DEBUG - Asking scheduler for work...
+2024-05-08 16:41:17,255 - DEBUG - Done
+2024-05-08 16:41:17,256 - DEBUG - There are no more tasks to run at this time
+2024-05-08 16:41:17,256 - INFO - Worker Worker(salt=6221448416, workers=1, host=DESKTOP-KIQCHDD, username=rsyd, pid=91008) was stopped. Shutting down Keep-Alive thread
+2024-05-08 16:41:17,262 - INFO - 
+===== Luigi Execution Summary =====
+
+Scheduled 3 tasks of which:
+* 3 ran successfully:
+    - 1 Extract()
+    - 1 Load()
+    - 1 Transform()
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+

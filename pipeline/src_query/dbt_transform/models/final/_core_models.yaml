@@ -1,0 +1,175 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: "Dimension table from customer table staging"
+    columns:
+      - name: customer_id
+        description: "Surrogate Key for customer_id"
+        tests:
+          - not_null
+          - dbt_constraints.primary_key
+
+      - name: nk_customer_id
+        description: "Natural Key for customer_id"
+        tests:
+          - not_null
+
+  - name: dim_shipping_method
+    description: "Dimension table from customer table shipping_method"
+    columns:
+      - name: shipping_method_id
+        description: "Surrogate Key for shipping_method_id"
+        tests:
+          - not_null
+          - dbt_constraints.primary_key
+
+      - name: nk_shipping_method_id
+        description: "Natural Key for shipping_method_id"
+        tests:
+          - not_null
+
+
+  - name: dim_address
+    description: "Dimension table from address table staging"
+    columns:
+      - name: address_id
+        description: "Surrogate Key for address_id"
+        tests:
+          - not_null
+          - dbt_constraints.primary_key
+
+      - name: nk_address_id
+        description: "Natural Key for address_id"
+        tests:
+          - not_null
+
+  - name: dim_book
+    description: "Dimension table for book table staging"
+    columns:
+      - name: book_id
+        description: "Surrogate Key for book_id"
+        tests:
+          - not_null
+          - dbt_constraints.primary_key
+
+      - name: nk_book_id
+        description: "Natural Key for book_id"
+        tests:
+          - not_null
+
+  - name: bridge_cust_address
+    description: "Bridges table for customer and address"
+    columns:
+      - name: cust_address_id
+        description: "Surrogate Key for cust_address_id"
+        tests:
+          - not_null
+          - dbt_constraints.primary_key
+
+      - name: customer_id
+        description: "Foreign Key from customer_id"
+        tests:
+          - not_null
+          - dbt_constraints.foreign_key:
+              pk_table_name: ref('dim_customer')
+              pk_column_name: customer_id
+
+      - name: address_id
+        description: "Foreign Key from address_id"
+        tests:
+          - not_null
+          - dbt_constraints.foreign_key:
+              pk_table_name: ref('dim_address')
+              pk_column_name: address_id
+      
+
+  - name: dim_date
+    description: "Dimension table for dates table"
+    columns:
+      - name: date_id
+        description: "Primary Key for dim_date"
+        tests:
+          - not_null
+          - dbt_constraints.primary_key
+
+  - name: dim_time
+    description: "Dimension table for times table"
+    columns:
+      - name: time_id
+        description: "Primary Key for dim_time"
+        tests:
+          - not_null
+          - dbt_constraints.primary_key
+
+  - name: fct_order_book
+    description: "Fact table for daily book order"
+    columns:
+      - name: order_id
+        description: "Surrogate Key for order_id"
+        tests:
+          - not_null
+          - dbt_constraints.primary_key
+      
+      - name: order_date
+        description: "date order placed"
+        tests:
+          - not_null
+          - dbt_constraints.foreign_key:
+              pk_table_name: ref('dim_date')
+              pk_column_name: date_id
+
+      - name: order_time
+        description: "time order placed"
+        tests:
+          - not_null
+          - dbt_constraints.foreign_key:
+              pk_table_name: ref('dim_time')
+              pk_column_name: time_id
+
+      - name: customer_id
+        description: "customer who placed order"
+        tests:
+          - not_null
+          - dbt_constraints.foreign_key:
+              pk_table_name: ref('dim_customer')
+              pk_column_name: customer_id
+      
+      - name: book_id
+        description: "book order"
+        tests:
+          - not_null
+          - dbt_constraints.foreign_key:
+              pk_table_name: ref('dim_book')
+              pk_column_name: book_id
+
+      - name: shipping_method_id
+        description: "Shipping Method"
+        tests:
+          - dbt_constraints.foreign_key:
+              pk_table_name: ref('dim_shipping_method')
+              pk_column_name: shipping_method_id
+      
+      - name: dest_address_id
+        description: "Destination Address"
+        tests:
+          - not_null
+          - dbt_constraints.foreign_key:
+              pk_table_name: ref('dim_address')
+              pk_column_name: address_id
+
+      - name: status_date
+        description: "Date status changed"
+        tests:
+          - not_null
+          - dbt_constraints.foreign_key:
+              pk_table_name: ref('dim_date')
+              pk_column_name: date_id
+
+      - name: status_time
+        description: "time status changed"
+        tests:
+          - not_null
+          - dbt_constraints.foreign_key:
+              pk_table_name: ref('dim_time')
+              pk_column_name: time_id

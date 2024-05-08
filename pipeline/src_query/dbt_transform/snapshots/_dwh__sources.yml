@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: pacbook-dwh
+    database: pacbook-dwh
+    schema: staging
+    tables:
+      - name: shipping_method
